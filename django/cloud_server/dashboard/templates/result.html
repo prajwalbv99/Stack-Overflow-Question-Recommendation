@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+	<h2>Results Table</h2>
+  	<p>Question Asked: <strong>{{ question }}</strong></p>
+  	<table class="table table-hover">
+	    <thead>
+	      <tr class="thead-dark">
+	        <th>Post Title</th>
+	        <th>Tags</th>
+	        <th>Similarity score</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+  		{% for post in similar_list %}
+	      <tr>
+	        <td><a href={{post.0}}>{{post.1}}</a></td>
+	        <td>{{post.2}}</td>
+	        <td>{{post.3}}</td>
+	      </tr>
+	    {% endfor %}
+	    </tbody>
+	</table>
+{% endblock %}

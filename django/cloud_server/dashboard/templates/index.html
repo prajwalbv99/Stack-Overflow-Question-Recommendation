@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Word Cloud</h2>
+      <img class="img-fluid" src="/static/tag_wordcloud.png" width="460" height="345">
+      <p>This diagram shows the most popular tags amongst all the questions in the dataset. It is represented in the form of a wordcloud with 'Javascript' being the tag with the largest font size and the brightest in the image. </p>
+      <br>
+      <h2>Tag Frequencies</h2>
+      <img class="img-fluid" src="/static/tag_bar.png" width="460" height="345">
+      <p>The following graph shows the top tags by count. Y-axis shows us the occurences of each tag and each bar on the X-axis represents a tag. </p>
+      <br>
+      <h2>Question Tag percentage</h2>
+      <img class="img-fluid" src="/static/question_tag_percentage.png" width="460" height="345">
+      <p>We can see how many questions are covered by a certain number of tags. </p>
+    </div>
+  </div>
+{% endblock %}
